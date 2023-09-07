@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm kanban board</title>
+
+    <link rel="stylesheet" href="farmc.css" />
+    <script src="farmj.js" defer></script>
+    <script src="farm2j.js" defer></script>
+  </head>
+  <body>
+    <div class="board">
+      <form id="do-form">
+        <input type="text" placeholder="add your task.." id="do-input" />
+        <button type="submit">+</button>
+      </form>
+
+      <div class="lanes">
+        <div class="swim-lane" id="do-lane">
+          <h3 class="heading">DO</h3>
+
+          <p class="task" draggable="true">Give the medicine</p>
+          <p class="task" draggable="true">Feed animals</p>
+          <p class="task" draggable="true">Clean their shed</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Doing</h3>
+
+          <p class="task" draggable="true">Gardening </p>
+          <p class="task" draggable="true">planting trees </p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Done</h3>
+
+          <p class="task" draggable="true">
+            Watch all farm animals are placed in a safe place
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
